@@ -1,0 +1,116 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#box2
+{
+    background-color: aqua;
+}
+
+
+.heading
+{
+    margin: 20px;
+    margin: 50px 30px;
+    margin: 20px 30px 20px 40px;
+    border: 20px solid brown;
+    border: 4px dashed black;
+    border-radius: 50%;
+    border-radius: 50px;
+    border-radius: 50px 30px 50px 30px;
+    background-color: beige;
+    padding: 30px;
+    font-size: 100px;
+}
+
+
+.heading p
+{
+    color: blueviolet;
+}
+
+
+.font-bold
+{
+    font-weight: bold;
+}
+
+
+.wrapper
+{
+    background: lightcoral;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /*flex-start flex-end space-between center  */
+    align-items: center;
+    gap: 20px;
+}
+
+
+.box
+{
+    height : 100px;
+    width: 200px;
+    color: red;
+    font-size: 20px;
+    background: blanchedalmond;
+    border: 5px solid blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* individual box size : first id, then flex-grow */
+.box div p 
+{
+    color: black;
+}
+
+
+.font-large
+{
+    font-size: 100px;
+}
+
+
+.action
+{
+    background-color: greenyellow;
+    border: 3px solid blueviolet;
+    padding: 5px 30px;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 15px;
+    cursor: pointer;
+    box-shadow: 30px black; /*shadow example website*/
+}
+
+
+@media (max-width: 899px)  /*899px and below : tab*/
+{
+    .wrapper
+    {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px)  /*600px and below : mobile*/
+{
+    .wrapper
+    {
+        flex-direction: column;
+    }
+}
+
+
+
+
