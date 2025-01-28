@@ -71,7 +71,7 @@ class TM {
     }
 }
 
-// DOM Manipulation
+
 const tm = new TM();
 const tf = document.getElementById('taskForm');
 const tl = document.getElementById('taskList');
@@ -126,7 +126,7 @@ function applyFandR() {
     renderT(ts);
 }
 
-// Event Listeners
+
 tf.addEventListener('submit', event => {
     event.preventDefault();
 
@@ -149,4 +149,3 @@ fs.addEventListener('change', applyFandR);
 ss.addEventListener('change', applyFandR);
 si.addEventListener('input', applyFandR);
 
-// Initial
